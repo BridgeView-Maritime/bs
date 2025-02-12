@@ -7,6 +7,11 @@ import shipBg from "../assets/shipimage.jpg";
 import auto from "../assets/automation.jpg";
 import design from "../assets/designelectrical.jpeg";
 import elec from "../assets/electric.jpeg";
+import compilance from "../assets/hr-compliance-audit.webp"
+import ship1 from "../assets/shipping-agency.webp"
+import fab from "../assets/fab.jpeg"
+
+
 const HomePage = () => {
   const navigate = useNavigate();
   const [showAbout, setShowAbout] = useState(false);
@@ -126,17 +131,17 @@ const HomePage = () => {
               {
                 title: "Compliance Audits",
                 description: "Ensure safety and compliance with ISM, ISPS, and environmental audits.",
-                image: "https://source.unsplash.com/400x300/?compliance,safety",
+                image: compilance,
               },
               {
                 title: "Ship Agency Services",
                 description: "Comprehensive port and vessel management solutions for seamless operations.",
-                image: "https://source.unsplash.com/400x300/?harbor,port",
+                image: ship1,
               },
               {
                 title: "Fabrication & Repair",
                 description: "Professional ship repair, steel renewal, and HVAC system overhauls.",
-                image: "https://source.unsplash.com/400x300/?workshop,engineering",
+                image: fab,
               },
             ].map((service, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
@@ -157,7 +162,7 @@ const HomePage = () => {
           <Box mt={5} p={3} sx={{ backgroundColor: "rgba(0, 51, 102, 0.9)", color: "white", textAlign: "center", borderRadius: 2, maxWidth: "80%", mx: "auto" }}>
             <Typography variant="h4">Get in Touch</Typography>
             <Typography variant="body1" sx={{ mt: 2 }}>
-              📍 India | ✉️ sales@bluelinesinternational.com | 📞 +971 50 391 7487
+              📍 India | ✉️ sales@gmail.com | 📞 +971 50 391 7487
             </Typography>
             <Button variant="contained" color="secondary" sx={{ mt: 2 }} onClick={() => navigate("/contact")}>
               Contact Us
